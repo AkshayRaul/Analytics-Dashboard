@@ -15,7 +15,10 @@ var UserSchema = mongoose.Schema({
 	},
 	name: {
 		type: String
-	}
+	},
+	stocks:{
+	    type: Object
+    }
 });
 
 var User = module.exports = mongoose.model('User', UserSchema);
